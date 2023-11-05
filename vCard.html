@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style/general.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="containter">
+      <div class="header">
+        <h1>QR Generation</h1>
+        <ul line-style="none">
+          <li><a href="/index.html">Generic</a></li>
+          <li><a href="/vCard.html">Contact Card</a></li>
+        </ul>
+      </div>
+      <form method="post">
+        <div float="block">
+          <h2>VCard</h2>
+          <label for="firstName">First Name : </label>
+          <input type="text" id="firstName" value="" size="40" /> <br />
+          <label for="lastName">Last Name : </label>
+          <input type="text" id="lastName" value="" size="40" /> <br />
+          <label for="lastName">Phone No :</label>
+          <input type="text" id="phoneNo" value="" size="40" /> <br />
+          <label for="org">Organisation or Business:</label>
+          <input type="text" id="org" value="" size="40" /> <br />
+          <label for="org">Job Title:</label
+          ><input type="text" id="title" value="" size="20" /> <br />
+          <label for="org">Website:</label
+          ><input type="text" id="url" value="" size="40" /> <br />
+          <label for="org">Email:</label
+          ><input type="text" id="email" value="" size="40" /> <br />
+          <label for="org">Address Line1:</label
+          ><input type="text" id="address1" value="" size="40" /> <br />
+          <label for="org">Address Line2:</label
+          ><input type="text" id="address2" value="" size="40" /> <br />
+          <label for="org">City:</label
+          ><input type="text" id="city" value="" size="40" /> <br />
+          <label for="org">State:</label
+          ><input type="text" id="state" value="" size="40" /> <br />
+          <label for="org">Country:</label
+          ><input type="text" id="country" value="" size="40" /> <br />
+          <label for="org">Zip Code: </label
+          ><input type="text" id="zipCode" value="" size="40" /> <br />
+          <br />
+          <input
+            type="button"
+            value="Generate"
+            onclick="javascript:generateQRCode();"
+          /><br />
+        </div>
+        <div>
+          <div style="display: none" id="vcardDiv">
+            <h3>VCARD Created Successfully !!!!!!</h3>
+            <textarea
+              rows="13"
+              cols="40"
+              style="display: none"
+              id="vcard"
+              border="2"
+            >
+            </textarea
+            ><br />
+            <h3>VCARD Embedded QR Code Image</h3>
+          </div>
+          <div id="imgBox">
+            <img
+              id="qrImg"
+              style="display: inline"
+              src="https://chart.googleapis.com/chart?cht=qr&choe=UTF-8&chs=200x200&chl=http%3A%2F%2Fofficetricks.com"
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/qrVcard.js"></script>
+  </body>
+</html>

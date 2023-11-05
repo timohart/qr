@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style/general.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="containter">
+      <div class="header">
+        <h1>QR Generation</h1>
+        <ul line-style="none">
+          <li><a href="/index.html">Generic</a></li>
+          <li><a href="/vCard.html">Contact Card</a></li>
+        </ul>
+      </div>
+      <p>Network Name</p>
+      <input type="text" placeholder="Network Name" id="qrName" /> </br>
+      <p>Network Password</p>
+      <input type="text" placeholder="Network Password" id="qrPw" /> </br>
+      <button onclick="generateQr()">QR</button>
+      <div id="imgBox">
+        <img src="" id="qrImg" />
+      </div>
+    </div>
+    <footer>
+      <h3><a href="/vCard.html">Vcard</a></h3>
+      <h3><a href="/index.html">Link</a></h3>
+    </footer>
+    <script src="/js/wifi.js"></script>
+  </body>
+</html>

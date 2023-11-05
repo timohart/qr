@@ -1,0 +1,109 @@
+* {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(69, 87, 103);
+}
+
+body {
+  background-color: #183d5e;
+}
+
+.containter {
+  width: 80%;
+  padding: 25px 35px;
+  position: absolute;
+  top: 5%;
+  left: auto;
+  transform: translate(-50% -50%);
+  background: #fff;
+  border-radius: 10px;
+}
+
+.containter input {
+  width: 80%;
+  height: 15px;
+  border: 1px solid gray;
+  outline: 0;
+  padding: 10px;
+  margin: 10px 0 20px;
+  border-radius: 5px;
+  float: right;
+}
+
+.containter label{
+  float: left;
+  height: 15px;
+}
+
+.containter button {
+  width: 50%;
+  height: 100px;
+  background: lightblue;
+  color: darkblue;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+#imgBox{
+  width: 200px;
+  border-radius: 5px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s;
+}
+
+#imgBox{
+  width: 100%;
+  padding: 10px;
+}
+
+#imgBox.show-img{
+  max-height: 300px;
+  max-width: 300px;
+  margin: auto;
+  border: 1px solid black;
+}
+
+.error{
+  animation: shake 0.1s linear 10;
+}
+
+@keyframes shake {
+  0%{
+    transform: translateX(0px);
+  }
+  25%{
+    transform: translateX(-2px);
+  }
+  50%{
+    transform: translateX(0px);
+  }
+  75%{
+    transform: translateX(2px);
+  }
+  1000%{
+    transform: translateX(0px);
+  }
+}
+
+.header li {
+  display: inline;
+}
+
+.header a {
+  text-decoration: none;
+  color: rgb(253, 253, 253);
+  background-color: rgb(40, 62, 127);
+  padding: 10px;
+  margin: 10px;
+}
+
+.header a:hover {
+  color: rgb(254, 254, 254);
+  background-color: rgb(11, 23, 61);
+  padding: 20px;
+  margin: 20px;
+}
